@@ -29,7 +29,7 @@ function TabIcon({ focused, icon, title }: any) {
 export default function TabsLayout() {
   return (
     <Tabs
-      initialRouteName="movies"
+      initialRouteName="index"
       screenOptions={{
         tabBarShowLabel: false,
         tabBarItemStyle: {
@@ -52,21 +52,9 @@ export default function TabsLayout() {
       }}
     >
       <Tabs.Screen
-        name="movies"
-        options={{
-          title: "Movies",
-          headerShown: false,
-          tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={icons.home} title="Movies" />
-          ),
-        }}
-      />
-
-      <Tabs.Screen
         name="index"
         options={{
-          href: null,
-          title: "index",
+          title: "Home",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
             <TabIcon focused={focused} icon={icons.home} title="Home" />
