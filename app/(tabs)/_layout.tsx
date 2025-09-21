@@ -29,6 +29,7 @@ function TabIcon({ focused, icon, title }: any) {
 export default function TabsLayout() {
   return (
     <Tabs
+      initialRouteName="index"
       screenOptions={{
         tabBarShowLabel: false,
         tabBarItemStyle: {
@@ -53,7 +54,7 @@ export default function TabsLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "index",
+          title: "Home",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
             <TabIcon focused={focused} icon={icons.home} title="Home" />
@@ -73,12 +74,12 @@ export default function TabsLayout() {
       />
 
       <Tabs.Screen
-        name="save"
+        name="saved"
         options={{
-          title: "Save",
+          title: "Saved",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={icons.save} title="Save" />
+            <TabIcon focused={focused} icon={icons.save} title="Saved" />
           ),
         }}
       />
