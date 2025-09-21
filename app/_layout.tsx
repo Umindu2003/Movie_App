@@ -1,6 +1,6 @@
 import { Stack } from "expo-router";
 import { StatusBar } from "react-native";
-import "./globals.css";
+// import "./globals.css";
 
 export default function RootLayout() {
   return (
@@ -15,7 +15,7 @@ export default function RootLayout() {
           }}
         />
         <Stack.Screen
-          name="movie/[id]"
+          name="(tabs)/movies/[id]"
           options={{
             headerShown: false,
           }}
